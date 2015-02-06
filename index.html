@@ -4,12 +4,27 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<title> NEW </title>
+	<script type=text/javascript>
+		window.onscroll = function() {	
+			if ($(document).scrollTop()  >= $("#menulow").height() / 2)
+			{
+				$("#menulow_fixed").show(300);
+				$("#menulow").hide();
+			} else
+			{
+				$("#menulow_fixed").hide(300);
+				$("#menulow").show();
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id = "header">
 		<div id = "menutop">
 		</div>
 		<div id = "menulow">
+		</div>
+		<div id = "menulow_fixed">
 		</div>
 	</div>
 </body>
