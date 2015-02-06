@@ -14,6 +14,8 @@
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function () {
+			$(".slider").width($(window).width());
+			$(".slider ul li").width($(window).width());			
 			$("#nav").show();
 			$("#ulhead ul.inside li").width($("#ulhead li").width());
 			$("#nav").hide();
@@ -22,11 +24,47 @@
 		$(window).resize(function () {
 			$("#ulhead ul.inside li").width($("#ulhead li").width());
 			$("#ulhead_static ul.inside li").width($("#ulhead_static li").width());
+			$(".slider").width($(window).width());
+			$(".slider ul li").width($(window).width());	
 		})
 	</script>	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".slider").each(function () {
+		var obj = $(this);
+		$(obj).append("<div class='nav'></div>");
+		$(obj).find("li").each(function () {
+			$(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); 
+			$(this).addClass("slider"+$(this).index());
+		});
+		$(obj).find("span").first().addClass("on");
+		});
+	});
+	function sliderJS (obj, sl) {
+		var ul = $(sl).find("ul"); 
+		var bl = $(sl).find("li.slider"+obj); 
+		var step = $(bl).width();
+		$(ul).animate({marginLeft: "-"+step*obj}, 500); 
+	}
+	$(document).on("click", ".slider .nav span", function() {
+		var sl = $(this).closest(".slider"); 
+		$(sl).find("span").removeClass("on"); 
+		$(this).addClass("on"); 
+		var obj = $(this).attr("rel");
+		sliderJS(obj, sl);
+		return false;
+	});
+</script>
 </head>
 <body>
 	<div id = "header">
+		<div class="slider">
+			<ul>
+				<li><img src="./slides/1.jpg" alt=""></li>
+				<li><img src="./slides/2.jpg" alt=""></li>
+				<li><img src="./slides/3.jpg" alt=""></li>
+			</ul>
+		</div>
 		<div id = "menutop">
 			<ul id = "ulhead">
 				<li class="top"><a href = "#">FOO</a></li>
