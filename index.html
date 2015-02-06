@@ -6,14 +6,13 @@
 	<title> NEW </title>
 	<script type=text/javascript>
 		window.onscroll = function() {	
-			if ($(document).scrollTop()  >= $("#menulow").height() / 2)
+			if ($(document).scrollTop()  >= $("#navlow").height() / 2)
 				$("#menulow_fixed").slideDown(400);
 			else
 				$("#menulow_fixed").hide(300);
 		}
 	</script>
 	<script type="text/javascript">
-		var menuhg = 83;//document.getElementById("nav_static").style.height;
 		$(document).ready(function () {
 			$("#nav").show();
 			$("#ulhead ul.inside li").width($("#ulhead li").width());
@@ -45,9 +44,22 @@
 				<li class="top"><a href = "#">FOO</a></li>
 			</ul>
 		</div>
-		<div id = "menulow">
+		<div id = "navlow">
+			<p>Secure Information Technologies</p>
+			<ul id = "ullow">
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+			</ul>
 		</div>
 		<div id = "menulow_fixed">
+			<ul id = "ullow">
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+			</ul>
 		</div>
 	</div>
 </body>
