@@ -7,15 +7,43 @@
 	<script type=text/javascript>
 		window.onscroll = function() {	
 			if ($(document).scrollTop()  >= $("#menulow").height() / 2)
-				$("#menulow_fixed").show(300);
+				$("#menulow_fixed").slideDown(400);
 			else
 				$("#menulow_fixed").hide(300);
 		}
 	</script>
+	<script type="text/javascript">
+		var menuhg = 83;//document.getElementById("nav_static").style.height;
+		$(document).ready(function () {
+			$("#nav").show();
+			$("#ulhead ul.inside li").width($("#ulhead li").width());
+			$("#nav").hide();
+			$("#ulhead_static ul.inside li").width($("#ulhead_static li").width());
+		})
+		$(window).resize(function () {
+			$("#ulhead ul.inside li").width($("#ulhead li").width());
+			$("#ulhead_static ul.inside li").width($("#ulhead_static li").width());
+		})
+	</script>	
 </head>
 <body>
 	<div id = "header">
 		<div id = "menutop">
+			<ul id = "ulhead">
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a>
+					<ul class="inside">
+						<li><a href="#">subFOO</a></li>
+						<li><a href="#">subFOO</a></li>
+						<li><a href="#">subFOO</a></li>
+						<li><a href="#">subFOO</a></li>
+					</ul>	
+				</li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+				<li class="top"><a href = "#">FOO</a></li>
+			</ul>
 		</div>
 		<div id = "menulow">
 		</div>
