@@ -1,0 +1,58 @@
+body {
+	padding: 0;
+	margin: 0;
+	height: 2000px;
+}
+
+/* SCROLLBAR MODIFY */
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+
+/* SCROLLBAR MODIFY END */
+
+#header {
+	position: relative;
+	height: 700px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#menutop{
+	position: fixed;
+	width: 100%;
+	height:	40px;
+	background-color: black;
+	z-index: 1000;
+}
+
+#menulow{
+	position: absolute;
+	margin-top: 40px;
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(#fff, rgba(0, 0, 0, 0));
+	z-index: 0;
+}
