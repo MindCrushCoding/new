@@ -307,10 +307,29 @@ body a:hover {
 }
 
 #block1 #shadow{
-	opacity: 0.1;
-	background-color: #f00;
+	background-color: rgba(255, 0, 0, 0.2);
 	height: 100%;
 	width: 100%;
+}
+
+#text {
+	float: left;
+	width: 50%;
+	margin: 10% 0 0 6%;
+}
+
+#text h1{
+	margin: 0;
+	padding: 0;
+	font-size: 50px;
+	font-weight: 300;
+	padding-bottom: 32px;
+}
+
+#text p{
+	font-size: 22px;
+	line-height: 1.72em;
+	padding-bottom: 20px;
 }
 
 #block2{
@@ -324,8 +343,7 @@ body a:hover {
 }
 
 #block2 #shadow{
-	opacity: 0.1;
-	background-color: #2EFF00;
+	background-color: rgba(46, 255, 0, 0.2);
 	height: 100%;
 	width: 100%;
 }
