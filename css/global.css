@@ -312,6 +312,11 @@ body a:hover {
 	width: 100%;
 }
 
+#hr{
+	background-color: #777;
+	height: 150px;
+}
+
 #text {
 	float: left;
 	width: 50%;
