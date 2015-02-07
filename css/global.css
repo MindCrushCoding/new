@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	height: 1000px;
+	/*height: 1000px;*/
 }
 
 /* SCROLLBAR MODIFY */
@@ -30,23 +30,31 @@ body {
 ::-webkit-scrollbar-track{
     border-width:0;
 }
+
+/* SCROLLBAR MODIFY END */
+
 #heading{
   	 background-image: url(../back/bk.png); 
 	 height: 200 px;
 	/* background-color: linear-gradient(rgba(0,33,115,1.0), rgba(0, 0, 0, 0));*/
  }
+ 
+ #content {
+	height: 1000px;
+	width: 100%;
+ }
+ 
 #footer {
 	position: relative; 
    /* height: 0;*/
-    left: 0; bottom: 0; 
+    left: 0; 
+	bottom: 0; 
     padding: 10px;
    /* background-image: url(../back/navy.jpg); */
     background-color: rgba(0,33,155,1.00);
-	clear:both
-    width: 95%; 
+	/*clear:both;
+    width: 95%; */
 }
-
-/* SCROLLBAR MODIFY END */
 
 #header {
 	position: relative;
@@ -65,7 +73,7 @@ body {
 #navlow{
 	position: absolute;
 	margin-top: 0px;
-	height: 140px;
+	height: 40px;
 	width: 100%;
 	/*background: linear-gradient(rgba(0,33,115,1.0), rgba(0, 0, 0, 0));*/
 	z-index: 0;
@@ -79,7 +87,8 @@ body {
 
 #menulow_fixed{
 	position: fixed;
-	margin-top: -120px;
+	/*margin-top: -120px;*/
+	top: 40px;
 	height: 40px;
 	width: 100%;
 	z-index: 999;
