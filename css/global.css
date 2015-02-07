@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	height: 2000px;
+	height: 1000px;
 }
 
 /* SCROLLBAR MODIFY */
@@ -30,12 +30,27 @@ body {
 ::-webkit-scrollbar-track{
     border-width:0;
 }
+#heading{
+  	 background-image: url(../back/bk.png); 
+	 height: 200 px;
+	/* background-color: linear-gradient(rgba(0,33,115,1.0), rgba(0, 0, 0, 0));*/
+ }
+#footer {
+	position: relative; 
+   /* height: 0;*/
+    left: 0; bottom: 0; 
+    padding: 10px;
+   /* background-image: url(../back/navy.jpg); */
+    background-color: rgba(0,33,155,1.00);
+	clear:both
+    width: 95%; 
+}
 
 /* SCROLLBAR MODIFY END */
 
 #header {
 	position: relative;
-	height: 744px;
+	height: 700px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -49,10 +64,10 @@ body {
 
 #navlow{
 	position: absolute;
-	margin-top: 40px;
+	margin-top: 0px;
 	height: 140px;
 	width: 100%;
-	background: linear-gradient(#868686, rgba(0, 0, 0, 0));
+	/*background: linear-gradient(rgba(0,33,115,1.0), rgba(0, 0, 0, 0));*/
 	z-index: 0;
 }
 
@@ -64,7 +79,7 @@ body {
 
 #menulow_fixed{
 	position: fixed;
-	margin-top: 40px;
+	margin-top: -120px;
 	height: 40px;
 	width: 100%;
 	z-index: 999;
@@ -84,7 +99,7 @@ body {
 	box-shadow: 0px 0px 0px 0px #000;
 	border-collapse: collapse;
 	z-index: 0;
-	background-color: black;
+	background-color: rgba(0,33,115,0.79);
 }
 
 #ulhead li.top {
@@ -175,7 +190,7 @@ body {
 /* SLIDER BEGIN */
 .slider {
 	z-index: 0;
-	width: 1200px;
+	width: 700px;
 	height: 100%;
 	overflow: hidden;
 	margin: 0 0 7px;
@@ -200,7 +215,7 @@ body {
 .slider ul li {
 	list-style-type: none;
 	float: left;
-	width: 1200px;
+	width: 700px;
 	height: 100%;
 }
 
@@ -232,7 +247,24 @@ body {
 	background: #CF8E18;
 }
  /* SLIDER END */
- 
+ .heading-sit{
+ 	/*background-color: black; /*url(back/фон2.png);*/
+	/*height: 160px;*/
+	text-align: left;
+ }
+ .heading-sit img{
+ position: relative; 
+ top: 20px;
+ }
+ .heading-ifmo{
+ 	/*background: repeat-x center bottom; */
+ 	height: 0px; 
+	text-align: right;
+ }
+ .heading-ifmo img{
+	position: relative; 
+ 	top: -100px;
+ }
  #descr {
 	position: absolute;
 	bottom: 0; 
