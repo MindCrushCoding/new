@@ -303,6 +303,7 @@ body a:hover {
 	background-image: url("../slides/2.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-attachment: fixed;
 }
 
 #block1 #shadow{
@@ -319,6 +320,7 @@ body a:hover {
 	background-image: url("../slides/3.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-attachment: fixed;
 }
 
 #block2 #shadow{
