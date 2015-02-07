@@ -4,6 +4,14 @@ body {
 	/*height: 1000px;*/
 }
 
+body a {
+	color: #fff;
+}
+
+body a:hover {
+	color: rgba(255, 87, 0, 0.94);
+}
+
 /* SCROLLBAR MODIFY */
 
 ::-webkit-scrollbar{
