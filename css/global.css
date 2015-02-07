@@ -35,7 +35,7 @@ body {
 
 #header {
 	position: relative;
-	height: 700px;
+	height: 744px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -52,7 +52,7 @@ body {
 	margin-top: 40px;
 	height: 140px;
 	width: 100%;
-	background: linear-gradient(#000, rgba(0, 0, 0, 0));
+	background: linear-gradient(#868686, rgba(0, 0, 0, 0));
 	z-index: 0;
 }
 
@@ -175,7 +175,7 @@ body {
 /* SLIDER BEGIN */
 .slider {
 	z-index: 0;
-	width: 700px;
+	width: 1200px;
 	height: 100%;
 	overflow: hidden;
 	margin: 0 0 7px;
@@ -200,13 +200,13 @@ body {
 .slider ul li {
 	list-style-type: none;
 	float: left;
-	width: 700px;
+	width: 1200px;
 	height: 100%;
 }
 
 .slider .nav {
 	position: absolute;
-	left: 15px;
+	right: 15px;
 	bottom: 12px; 
 }
 
@@ -232,3 +232,17 @@ body {
 	background: #CF8E18;
 }
  /* SLIDER END */
+ 
+ #descr {
+	position: absolute;
+	bottom: 0; 
+	background-color: rgba(150, 150, 150, 0.5);
+	height: 150px;
+	width: 100%;
+	padding-left: 20px;
+ }
+ 
+ #descr p{
+	position: absolute;
+	bottom: 0;
+}

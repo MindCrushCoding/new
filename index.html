@@ -44,7 +44,7 @@
 		var ul = $(sl).find("ul"); 
 		var bl = $(sl).find("li.slider"+obj); 
 		var step = $(bl).width();
-		$(ul).animate({marginLeft: "-"+step*obj}, 500); 
+		$(ul).animate({marginLeft: "-"+step*obj}, 800); 
 	}
 	$(document).on("click", ".slider .nav span", function() {
 		var sl = $(this).closest(".slider"); 
@@ -59,6 +59,12 @@
 <body>
 	<div id = "header">
 		<div class="slider">
+		
+			<div id = "descr" >
+				<h1> RANDOM </h1>
+				<p> Something else </p>
+			</div>
+			
 			<ul>
 				<li><img src="./slides/1.jpg" alt=""></li>
 				<li><img src="./slides/2.jpg" alt=""></li>
@@ -84,7 +90,7 @@
 		</div>
 		<div id = "navlow">
 			<p>Secure Information Technologies</p>
-			<ul id = "ullow">
+			<ul id = "ullow" style = "bottom: 20px;">
 				<li class="top"><a href = "#">FOO</a></li>
 				<li class="top"><a href = "#">FOO</a></li>
 				<li class="top"><a href = "#">FOO</a></li>
