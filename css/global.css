@@ -42,9 +42,9 @@ body a:hover {
 /* SCROLLBAR MODIFY END */
 
 #heading{
-  	 background-image: url(../back/bk.png); 
 	 height: 200 px;
-	/* background-color: linear-gradient(rgba(0,33,115,1.0), rgba(0, 0, 0, 0));*/
+	 position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
  }
  
  #globalcontent {
@@ -125,6 +125,15 @@ body a:hover {
 
 #ulhead li.top:hover {
 	background: rgba(255, 87, 0, 0.94) ;
+}
+
+#ulhead li.nonhover {
+	display: table-cell;	
+	text-align: center;
+	vertical-align:middle;
+	transition: 0.4s;
+	position: relative;
+	color: white;
 }
 
 #ulhead li a{
