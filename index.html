@@ -10,6 +10,10 @@
 				$("#menulow_fixed").slideDown(400);
 			else
 				$("#menulow_fixed").hide(300);
+			if ($(document).scrollTop() > $("#intro").offset().top)
+				$("#totop").show(400)
+			else
+				$("#totop").hide(300);
 		}
 	</script>
 	<script type="text/javascript">
@@ -54,9 +58,28 @@
 		sliderJS(obj, sl);
 		return false;
 	});
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+				}
+			}
+		});
+	});
 </script>
 </head>
 <body>
+	<a href="#header">
+		<div id = "totop">
+			Наверх
+		</div>
+	</a>
 	<div id = "header">
 		<div class="slider">
 		
@@ -110,16 +133,16 @@
 			
 			<div id = "navlow">
 				<ul id = "ullow" style = "bottom: 0px;">
-					<li class="top"><a href = "#">FOO</a></li>
-					<li class="top"><a href = "#">FOO</a></li>
+					<li class="top"><a href = "#block1" >block1</a></li>
+					<li class="top"><a href = "#block2">block2</a></li>
 					<li class="top"><a href = "#">FOO</a></li>
 					<li class="top"><a href = "#">FOO</a></li>
 				</ul>
 			</div>
 			<div id = "menulow_fixed">
 				<ul id = "ullow">
-					<li class="top"><a href = "#">FOO</a></li>
-					<li class="top"><a href = "#">FOO</a></li>
+					<li class="top"><a href = "#block1" >block1</a></li>
+					<li class="top"><a href = "#block2">block2</a></li>
 					<li class="top"><a href = "#">FOO</a></li>
 					<li class="top"><a href = "#">FOO</a></li>
 				</ul>
@@ -191,7 +214,14 @@
 			</div>
 		</div>	
 		<div class="right" style="margin-left:200px">
- 	 		<p align="right"><font size="4" color="#3d435b"> <br> Присоединяйтесь к нам в соц. сетях	 <a href="http://vk.com/ifmo_sit" ><img src="logo/vk.png" width="40px" height="40px" ></a> <a href="https://twitter.com/ifmosit" ><img src="logo/tw.png" width="40px" height="40px" ></a>  </p>
+ 	 		<p align="right"><font size="4" color="#3d435b"> 
+				<a href="http://vk.com/ifmo_sit" >
+					<img src="logo/vk.png" width="40px" height="40px" >
+				</a> 
+				<a href="https://twitter.com/ifmosit">
+					<img src="logo/tw.png" width="40px" height="40px" >
+				</a> 
+				<br> Присоединяйтесь к нам в соц. сетях  </p>
 		</div>
 
 	</div>
