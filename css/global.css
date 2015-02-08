@@ -54,14 +54,10 @@ body a:hover {
  
 #footer {
 	position: relative; 
-   /* height: 0;*/
     left: 0; 
 	bottom: 0; 
     padding: 10px;
-   /* background-image: url(../back/navy.jpg); */
-    background-color: rgba(0,33,155,1.00);
-	/*clear:both;
-    width: 95%; */
+    background-color: rgba(10,26,91,1.00);
 }
 
 #header {
@@ -274,8 +270,7 @@ body a:hover {
  top: 20px;
  }
  .heading-ifmo{
- 	/*background: repeat-x center bottom; */
- 	height: 0px; 
+ 	/*height: 0px; */
 	text-align: right;
  }
  .heading-ifmo img{
