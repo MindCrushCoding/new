@@ -76,7 +76,7 @@ body a:hover {
 
 #navlow{
 	position: absolute;
-	margin-top: 0px;
+	margin-top: 120px;
 	height: 40px;
 	width: 100%;
 	/*background: linear-gradient(rgba(0,33,115,1.0), rgba(0, 0, 0, 0));*/
@@ -263,19 +263,21 @@ body a:hover {
  .heading-sit{
  	/*background-color: black; /*url(back/фон2.png);*/
 	/*height: 160px;*/
-	text-align: left;
+	float: left;
+	top: 40px;
+	position: absolute;
  }
  .heading-sit img{
- position: relative; 
- top: 20px;
+
  }
  .heading-ifmo{
  	/*height: 0px; */
-	text-align: right;
+	right: 0;
+	top: 40px;
+	position: absolute;
  }
  .heading-ifmo img{
-	position: relative; 
- 	top: -100px;
+
  }
  #descr {
 	position: absolute;
