@@ -378,3 +378,43 @@ body a:hover {
 	height: 100%;
 	width: 100%;
 }
+#news {
+	position: fixed;
+	top: 353px;
+	right: 0;
+	background: rgba(0,33,115,0.45);
+	width: 28px;
+	height: 50px;
+	font: 40px Georgia;
+	color: #fff;
+	text-align: center;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	border-radius: 0 5px 5px 0;
+	}
+#s_panel {
+	position: fixed;
+	top: 253px;
+	right: -150px;
+	background: rgba(240,82,5,0.75);
+	width: 150px;
+	height: 150px;
+	padding: 100px 0 0 0;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+	}
+#news:hover {
+	right: 150px;
+}
+#news:hover #s_panel {
+	right: 0;
+}
