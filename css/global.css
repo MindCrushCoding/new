@@ -12,19 +12,6 @@ body a:hover {
 	color: rgba(255, 87, 0, 0.94);
 }
 
-#totop{
-	position: fixed;
-	display: none;
-	height: 40px;
-	width: 100px;
-	right: 150px;
-	bottom: 50px;
-	background-color: rgba(255, 100, 100, 0.4);
-	z-index: 1002;
-	text-align: center;
-	padding: 10px;
-}
-
 /* SCROLLBAR MODIFY */
 
 ::-webkit-scrollbar{
