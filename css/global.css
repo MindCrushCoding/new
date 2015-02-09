@@ -386,9 +386,9 @@ body a:hover {
 #s_panel {
 	position: fixed;
 	top: 253px;
-	right: -150px;
+	right: -100%;
 	background: rgba(240,82,5,0.75);
-	width: 150px;
+	width: 100%;
 	height: 150px;
 	padding: 100px 0 0 0;
 	-webkit-transition-duration: 0.3s;
@@ -400,7 +400,7 @@ body a:hover {
 	border-radius: 5px  0 0 5px;
 	}
 #news:hover {
-	right: 150px;
+	right: 100%;
 }
 #news:hover #s_panel {
 	right: 0;
