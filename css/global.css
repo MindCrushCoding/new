@@ -64,15 +64,14 @@ body a:hover {
 	/*height: 1000px;*/
 	width: 100%;
  }
- 
 #footer {
-	position: relative; 
-    left: 0; 
-	bottom: 0; 
-    padding: 10px;
-    background-color: rgba(10,26,91,1.00);
+	position: relative;
+    left: 0;
+    bottom: 0;
+    height: 150px;
+	background-color: rgba(10,26,91,1.00);
+    padding: 3px;
 }
-
 #header {
 	position: relative;
 	height: 744px;
@@ -263,6 +262,7 @@ body a:hover {
 .slider .nav span {
 	opacity: 0.9;
 	background: #fff;
+
 	margin: 0 8px 0 0;
 	width: 16px;
 	height: 16px;
@@ -392,9 +392,9 @@ body a:hover {
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-	-webkit-border-radius: 5px 0 0 5px;
-	-moz-border-radius: 5px 0 0 5px;
-	border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px  0 0 5px;
+	-moz-border-radius: 5px  0 0 5px;
+	border-radius: 5px  0 0 5px;
 	}
 #s_panel {
 	position: fixed;
@@ -408,9 +408,9 @@ body a:hover {
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-	-webkit-border-radius: 5px 0 0 5px;
-	-moz-border-radius: 5px 0 0 5px;
-	border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px  0 0 5px;
+	-moz-border-radius: 5px  0 0 5px;
+	border-radius: 5px  0 0 5px;
 	}
 #news:hover {
 	right: 150px;
