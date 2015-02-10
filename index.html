@@ -1,52 +1,10 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/global.css"media="all" >
-       <link rel="stylesheet" media="all" href="style/type/puritan.css" >
-       <link rel="stylesheet" type="text/css" href="style.css" media="all" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<script type="text/javascript" src="jquery.min.js"></script>
- 
-	<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
-	<script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
-	<script type="text/javascript">
-	jQuery(document).ready(function() {
-    // Initialise the first and second carousel by class selector.
-	// Note that they use both the same configuration options (none in this case).
-	jQuery('.d-carousel .carousel').jcarousel({
-        scroll: 1
-    });
-	});
-</script>
-
 	<title> NEW </title>
- <script type="text/javascript">
-    window.addEvent('domready',function() {
-	/* settings */
-	var list = $('news-feed').getFirst('ul');
-	var items = list.getElements('li');
-	var showDuration = 3000;
-	var scrollDuration = 500;
-	var index = 0;
-	var height = items[0].getSize().y;
-	/* action func */
-	var move = function() {
-		list.set('tween',{
-			duration: scrollDuration,
-			onComplete: function() {
-				if(index == items.length - 1) {
-					index = 0 - 1;
-					list.scrollTo(0,0);
-				}
-			}
-		}).tween('top',0 - (++index * height));
-	};
-	/* go! */
-	window.addEvent('load',function() {		
-		move.periodical(showDuration);
-	});
-});	</script>
-	
-		<script type=text/javascript>
+			<script type=text/javascript>
 			window.onscroll = function() {	
 			if ($(document).scrollTop()  >= $("#heading").height() / 1.5)
 				$("#menulow_fixed").slideDown(400);
@@ -265,50 +223,6 @@
     
     <div id="news"> «
 	<div id="s_panel">
-	<!-- Begin Wrapper -->
-  <div id="wrapper" style="margin-top:-75px">
-  
-    <div class="d-carousel">
-      <ul class="carousel">
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">1 N</a></h4>
-          <p>Blah</p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">2 N</a></h4>
-          <p>Blah </p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">3 N</a></h4>
-          <p>Blah </p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">4 N</a></h4>
-          <p>Blah</p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">5 N</a></h4>
-          <p>Blah</p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">6 N</a></h4>
-          <p>Blah </p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">7 N</a></h4>
-          <p>Blah </p>
-        </li>
-        <li> <a href="#"><img src="style/images/carousel.jpg" alt="" /></a>
-          <h4><a href="#">8 N</a></h4>
-          <p>Blah</p>
-        </li>
-      </ul>
-    </div>
-    <div class="clear"></div>
-  </div>
-  
-  <!-- End Wrapper -->   
-</div>
 	</div>
 </div>
  
