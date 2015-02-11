@@ -112,17 +112,15 @@
 		</div>
 		<div id = "menutop">
 			<ul id = "ulhead">
+				
 				<li class="nonhover">
-				 	 <div id="clock" class="light">
- 						 <div class="clock">
+				 	 	 <div class="clock">
    							 <span class="hours"></span>
   						     <span class="minutes"></span>
  						 </div>
- 						 <div class="date">
-   							 <div id="daymonth"></div>
- 						     <div id="year"></div>
-                         </div>
-                          <div class="par">
+						 <div id="daymonth" style="margin-left: 50px; align-content:left; font-size:1vw"></div>
+                         <div id="year"style="margin-left: 50px; align-content:left;font-size:1vw">   </div>
+         <div id="par" style=" 	margin-left: 50px; align-content:left; font-size: 1vw">
                              <script type="text/javascript">
 
 var calStartDOW = 1; 
@@ -163,7 +161,7 @@ function main () {
 
 document.write('<small><span id="info"></span></small>');
 main();
-</script>
+</script>               
 		 </div>
 
 			<script type="text/javascript">
@@ -173,8 +171,7 @@ main();
         day = date.getUTCDate(),
         months = [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
     
-    document.getElementById('daymonth').innerHTML = months[month] + " " + day;
-    document.getElementById('year').innerHTML = year;
+    document.getElementById('daymonth').innerHTML = months[month] + " " + day+". "+year;
     
     var clockH = $(".hours");
     var clockM = $(".minutes");
@@ -191,7 +188,6 @@ main();
     var clock = setInterval(time, 1000);
     time();
             </script>	
-					</div>
 				</li>
 				<li class="top"><a href = "#">FOO</a>
 					<ul class="inside">

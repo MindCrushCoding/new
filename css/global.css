@@ -127,9 +127,9 @@ body a:hover {
 }
 
 #ulhead li.nonhover {
-	display: table-cell;	
+/*	display: table-cell;	
 	text-align: center;
-	vertical-align:middle;
+	vertical-align:middle;*/
 	transition: 0.4s;
 	position: relative;
 	color: white;
@@ -422,26 +422,26 @@ body a:hover {
 
 .date #daymonth {
   color:white;
-  font-size:1em;
-  margin-top: -40px;
+  font-size: 1.2vw;
 }
 .date #year {
   color:#C1C1C1;
-  font-size:1em;
-  /*margin-top: -10px;
-  margin-left: 50px;*/
-}
+  font-size: 1.2vw;
+  /*margin-top: 20px;*/
 
+}
+@media(max-width: 400px) { .date #daymonth { display: none; } }
 .clock {
   background-color:rgba(255, 87, 0, 0.84);
   border: 0.19em solid white;
  /* border-color:rgba(255,255,255,0.70);*/
   border-radius: 100%;
-  height: 2em;
-  margin-left:10%;
-  margin-bottom:1.5%;
-  position: relative;
-  width: 2em;
+  height: 32px;
+
+  position: absolute;
+  margin-left:7;
+  margin-top:1;
+  width: 32px;
 }
 .clock span {
   background: white;
@@ -462,6 +462,7 @@ body a:hover {
 
 /* CLOCk ENDS*/
 .par{
-	margin-top: -30px;
-	margin-left: 70%;	
+
+	margin-top: 0;
+	font-size: 1.2vw;
 }
