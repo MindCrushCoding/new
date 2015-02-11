@@ -42,23 +42,25 @@ body a:hover {
 /* SCROLLBAR MODIFY END */
 
 #heading{
-	 height: 200px;
-	 position: relative;
+	height: 200px;
+	position: relative;
  	background: linear-gradient(to bottom, #002173 0%,#002173 40px,rgba(0,33,115,0.0) 100%); 
  }
  
  #globalcontent {
 	/*height: 1000px;*/
 	width: 100%;
- }
+}
+ 
 #footer {
 	position: relative;
     left: 0;
     bottom: 0;
-    /*height: 150px;*/
+    height: 150px;
 	background-color: rgba(10,26,91,1.00);
     padding: 3px;
 }
+
 #header {
 	position: relative;
 	height: 744px;
@@ -142,6 +144,7 @@ body a:hover {
 	display: block;
 	text-decoration: none;
 	color: white;
+	padding: 5px 5px 5px 5px;
 }
 
 /* DROPDOWN*/
@@ -157,23 +160,23 @@ body a:hover {
 }
 
 #ulhead ul.inside li:hover {
-	background: #000;
+	background: #002173 ; 
 }
 
 #ulhead ul.inside{
 	position: absolute;
 	left: -9999px;
-	background-color: rgba(0, 0, 0, 0.41);
+	/*background-color: rgba(0, 0, 0, 0.41);*/
+	background-color: inherit;
 	z-index: -1;
 	padding: 0;
-	text-align:left;
-	text-indent:4px;
+	text-align:center;	
 }
 
 #ulhead li.top:hover ul.inside {
 	left: 0;
 	display: block;
-	margin: 11px 0 0 0;
+	margin: 6px 0 0 0;
 }
 
 /* END DROPDOWN*/
@@ -378,6 +381,7 @@ body a:hover {
 	height: 100%;
 	width: 100%;
 }
+
 #block3{
 	position: relative;
 	width: 100%;
@@ -393,6 +397,7 @@ body a:hover {
 	height: 100%;
 	width: 100%;
 }
+
 #block4{
 	position: relative;
 	width: 100%;
