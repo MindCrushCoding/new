@@ -63,7 +63,7 @@ body a:hover {
 
 #header {
 	position: relative;
-	height: 744px;
+	height: 100%; /*744px was */
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -230,7 +230,7 @@ body a:hover {
 
 .slider img{
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .slider ul, .slider li {
@@ -305,8 +305,8 @@ body a:hover {
  #descr {
 	position: absolute;
 	bottom: 0; 
-	background-color: rgba(150, 150, 150, 0.2);
-	height: 150px;
+	background-color: rgba(0, 32, 114, 0.82);
+	height: 12%;
 	width: 100%;
 	padding-left: 20px;
  }
