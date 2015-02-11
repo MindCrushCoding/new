@@ -95,14 +95,13 @@ body a:hover {
 	width: 100%;
 	z-index: 999;
 	display: none;
-	background-color: #777;
+	background-color: rgba(0,0,0,0.70);
 }
 #menulow_fixed #ullow{
 	width: 70%;
 	left: 15%;
 	right: 15%;
 }
-
 #ulhead {
 	height: 40px;
 	position: fixed;
@@ -127,7 +126,7 @@ body a:hover {
 }
 
 #ulhead li.top:hover {
-	background: rgba(255, 87, 0, 0.94) ;
+	background: rgba(255, 87, 0, 0.74) ;
 }
 
 #ulhead li.nonhover {
@@ -203,13 +202,13 @@ body a:hover {
 	vertical-align:middle;
 	transition: 0.4s;
 	position: relative;
+	font-size: 1.2vw;
 }
 
 #ullow li a{
 	display: block;
 	text-decoration: none;
 	color: white;
-	font-size: 1.2vw;
 }
 
 #ullow li a:hover{
@@ -332,13 +331,13 @@ body a:hover {
 }
 
 #block1 #shadow{
-	background-color: rgba(255, 0, 0, 0.2);
+	background-color: rgba(255, 87, 0, 0.54);
 	height: 100%;
 	width: 100%;
 }
 
 #hr{
-	background-color: #777;
+	background-color: 	#FFF8E7;
 	height: 150px;
 }
 
@@ -354,26 +353,58 @@ body a:hover {
 	font-size: 50px;
 	font-weight: 300;
 	padding-bottom: 32px;
+	color: white;
 }
 
 #text p{
 	font-size: 22px;
 	line-height: 1.72em;
 	padding-bottom: 20px;
+	color:white;
 }
 
 #block2{
 	position: relative;
 	width: 100%;
 	height: 700px;
-	background-image: url("../slides/3.jpg");
+	background-image: url("../images/3.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 }
 
 #block2 #shadow{
-	background-color: rgba(46, 255, 0, 0.2);
+	background-color: rgba(0, 33, 115, 0.80);
+	height: 100%;
+	width: 100%;
+}
+#block3{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	background-image: url("../images/3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#block3 #shadow{
+	background-color: rgba(0, 33, 115, 0.80);
+	height: 100%;
+	width: 100%;
+}
+#block4{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	background-image: url("../images/3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#block4 #shadow{
+	background-color: rgba(0, 33, 115, 0.80);
 	height: 100%;
 	width: 100%;
 }
@@ -401,7 +432,7 @@ body a:hover {
 	position: fixed;
 	top: 228px;
 	right: -100%;
-	background: rgba(240,82,5,0.75);
+	background: rgba(0,0,0,0.85);
 	width: 100%;
 	height: 200px;
 	padding: 50px 0 0 0;
