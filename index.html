@@ -7,16 +7,12 @@
    	<script type="text/javascript" src="jquery.min.js"></script>
     <script src="owl.carousel.js"></script>
     <script src="moment.min.js"></script>
-	<script src="./js/audio.min.js"></script>	
 
     <script>
 		$(document).ready(function() {
 		  $("#owl-demo").owlCarousel({
 			navigation : true
 		  });
-		});
-		audiojs.events.ready(function() {
-			var as = audiojs.createAll();
 		});
 	</script>
 
@@ -101,9 +97,6 @@
 </script>
 </head>
 <body>
-<div id =  "player">
-	<audio src="./oops.mp3" preload="auto"></audio>
-</div>
 	<div id = "header">
 		<div class="slider">		
 			<div id = "descr" >
@@ -223,24 +216,22 @@
 			</ul>
 		</div>
 		
-        <div id = "heading"; style="height:160px">			
+        <div id = "heading">			
 			<div class="heading-sit">
-				<a href="http://cit.ifmo.ru/"><img src="logo/sit.png" width="405" 
-				height="112" alt="главная"></a>
+				<a href="http://cit.ifmo.ru/"><img src="logo/sit.png"alt="главная"></a>
 			 </div>
-			<div class="heading-ifmo">
-				<a href="http://www.ifmo.ru/"><img src="logo/ifmo.png" width="205" 
-				height="115" alt="итмо"></a>
-			</div>
-			
-			<div id = "navlow">
-				<ul id = "ullow" style = "bottom: 0px;">
+			 <div id = "navlow">
+				<ul id = "ullow">
 					<li class="top"><a href = "#block1">О кафедре</a></li>
 					<li class="top"><a href = "#block2">Деятельность</a></li>
 					<li class="top"><a href = "#">Направления подготовки</a></li>
 					<li class="top"><a href = "#">Структура</a></li>
 				</ul>
 			</div>
+			<div class="heading-ifmo">
+				<a href="http://www.ifmo.ru/"><img src="logo/ifmo.png" alt="итмо"></a>
+			</div>
+			
 			<div id = "menulow_fixed">
 				<ul id = "ullow">
 					<li class="top"><a href = "#block1">О кафедре</a></li>

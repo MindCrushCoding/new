@@ -4,12 +4,6 @@ body {
 	/*height: 1000px;*/
 }
 
-#player{
-	position: absolute;
-	margin-top: 200px;
-	z-index: 10001;
-}
-
 body a {
 	color: #fff;
 }
@@ -48,7 +42,7 @@ body a:hover {
 /* SCROLLBAR MODIFY END */
 
 #heading{
-	 height: 200 px;
+	 height: 200px;
 	 position: relative;
  	background: linear-gradient(to bottom, #002173 0%,#002173 40px,rgba(0,33,115,0.0) 100%); 
  }
@@ -81,7 +75,7 @@ body a:hover {
 
 #navlow{
 	position: absolute;
-	margin-top: 140px;
+	margin-top: 60px;
 	height: 40px;
 	width: 100%;
 	z-index: 0;
@@ -93,7 +87,7 @@ body a:hover {
 	font-size: 20px;
 }
 
-#menulow_fixed{
+#menulow_fixed {
 	position: fixed;
 	/*margin-top: -120px;*/
 	top: 40px;
@@ -102,6 +96,11 @@ body a:hover {
 	z-index: 999;
 	display: none;
 	background-color: #777;
+}
+#menulow_fixed #ullow{
+	width: 70%;
+	left: 15%;
+	right: 15%;
 }
 
 #ulhead {
@@ -185,7 +184,7 @@ body a:hover {
 	bottom: 0;
 	height: 40px;
 	font-family: Arial;
-	width: 70%;
+	width: 60%;
 	display: table;
 	table-layout: fixed;
 	margin: 0;
@@ -194,6 +193,8 @@ body a:hover {
 	border-collapse: collapse;
 	z-index: 0;
 	background-color: transparent;
+	left: 25%;
+	right: 15%;
 }
 
 #ullow li.top {
@@ -208,11 +209,11 @@ body a:hover {
 	display: block;
 	text-decoration: none;
 	color: white;
+	font-size: 1.2vw;
 }
 
 #ullow li a:hover{
-	font-weight: bold;
-	text-decoration: underline;
+	color: rgba(255, 87, 0, 0.84);
 }
 
 /* SLIDER BEGIN */
@@ -280,20 +281,24 @@ body a:hover {
  	/*background-color: black; /*url(back/фон2.png);*/
 	/*height: 160px;*/
 	float: left;
-	top: 40px;
+	top: 50px;
+	width:25%;
 	position: absolute;
  }
  .heading-sit img{
-
+	width: 100%;
+	height: auto;
  }
  .heading-ifmo{
  	/*height: 0px; */
 	right: 0;
-	top: 40px;
+	top: 30px;
+	width: 15%;
 	position: absolute;
  }
  .heading-ifmo img{
-
+	width: 100%;
+	height: auto;
  }
  #descr {
 	position: absolute;
