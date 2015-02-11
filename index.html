@@ -114,78 +114,78 @@
 			<ul id = "ulhead">
 				
 				<li class="nonhover">
-				 	 	 <div class="clock">
-   							 <span class="hours"></span>
-  						     <span class="minutes"></span>
- 						 </div>
-						 <div id="daymonth" style="margin-left: 50px; align-content:left; font-size:1vw"></div>
-                         <div id="year"style="margin-left: 50px; align-content:left;font-size:1vw">   </div>
-         <div id="par" style=" 	margin-left: 50px; align-content:left; font-size: 1vw">
-                             <script type="text/javascript">
+				 	 	<div class="clock">
+   							<span class="hours"></span>
+  						    <span class="minutes"></span>
+ 						</div>
+						<div id="daymonth" style="margin-left: 60px; font-size:1.1vw"></div>
+                        <div id="year"style="margin-left: 50px; font-size:1vw">   </div>
+						<div id="par" style="margin-left: 60px; font-size: 1.1vw">
+							<script type="text/javascript">
+								var calStartDOW = 1; 
 
-var calStartDOW = 1; 
+								function getWeekNum (day,month,year) { 
+									if (calStartDOW == 0) day++; 
+									month++; 
+									var a = Math.floor((14-month) / 12);
+									var y = year + 4800 - a;
+									var m = month + 12 * a - 3;
+									var J = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y/4) - 
+									Math.floor(y/100) + Math.floor(y/400) - 32045;
+									d4 = (((J + 31741 - (J % 7)) % 146097) % 36524) % 1461;
+									var L = Math.floor(d4 / 1460);
+									var d1 = ((d4 - L) % 365) + L;
+									var week = Math.floor(d1/7) + 1;
+									return week;
+								}
 
-function getWeekNum (day,month,year) { 
- if (calStartDOW == 0) day++; 
- month++; 
- var a = Math.floor((14-month) / 12);
- var y = year + 4800 - a;
- var m = month + 12 * a - 3;
- var J = day + Math.floor((153 * m + 2) / 5) + 365 * y + Math.floor(y/4) - 
-  Math.floor(y/100) + Math.floor(y/400) - 32045;
- d4 = (((J + 31741 - (J % 7)) % 146097) % 36524) % 1461;
- var L = Math.floor(d4 / 1460);
- var d1 = ((d4 - L) % 365) + L;
- var week = Math.floor(d1/7) + 1;
- return week;
-}
+								function weekInfo () { 
+									var date = new Date();
+									var Y = date.getFullYear();
+									var M = date.getMonth();
+									var D=date.getDate();
+									var NW=getWeekNum(D,M,Y)-6;
 
-function weekInfo () { 
- var date = new Date();
- var Y = date.getFullYear();
- var M = date.getMonth();
- var D=date.getDate();
- var NW=getWeekNum(D,M,Y)-6;
+									if(NW % 2 == 0) { 
+										document.getElementById('info').innerHTML +='неделя чётная'
+									}
+									else {document.getElementById('info').innerHTML +='неделя нечётная'} 
+								}
 
- if(NW % 2 == 0) { document.getElementById('info').innerHTML +='неделя чётная'
- }
- else {document.getElementById('info').innerHTML +='неделя нечётная'} 
-}
+								function main () {
+									weekInfo (); 
+								}
 
-function main () {
- weekInfo (); 
-}
+								document.write('<small><span id="info"></span></small>');
+								main();
+							</script>               
+						</div>
+						<script type="text/javascript">
+							var date = new Date(),
+							year = date.getFullYear(),
+							month = date.getMonth(),
+							day = date.getUTCDate(),
+							months = [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-document.write('<small><span id="info"></span></small>');
-main();
-</script>               
-		 </div>
+							document.getElementById('daymonth').innerHTML = months[month] + " " + day+". "+year;
 
-			<script type="text/javascript">
-            var date = new Date(),
-        year = date.getFullYear(),
-        month = date.getMonth(),
-        day = date.getUTCDate(),
-        months = [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-    
-    document.getElementById('daymonth').innerHTML = months[month] + " " + day+". "+year;
-    
-    var clockH = $(".hours");
-    var clockM = $(".minutes");
-    
-    function time() {     
-      var d = new Date(),
-          s = d.getSeconds() * 6,
-          m = d.getMinutes() * 6 + (s / 60),
-          h = d.getHours() % 12 / 12 * 360 + (m / 12);  
-        clockH.css("transform", "rotate("+h+"deg)");
-        clockM.css("transform", "rotate("+m+"deg)");  
-    }
-    
-    var clock = setInterval(time, 1000);
-    time();
-            </script>	
+							var clockH = $(".hours");
+							var clockM = $(".minutes");
+
+							function time() {     
+								var d = new Date(),
+								s = d.getSeconds() * 6,
+								m = d.getMinutes() * 6 + (s / 60),
+								h = d.getHours() % 12 / 12 * 360 + (m / 12);  
+								clockH.css("transform", "rotate("+h+"deg)");
+								clockM.css("transform", "rotate("+m+"deg)");  
+							}
+
+							var clock = setInterval(time, 1000);
+							time();
+						</script>	
 				</li>
+				
 				<li class="top"><a href = "#">FOO</a>
 					<ul class="inside">
 						<li><a href="#">subFOO</a></li>
