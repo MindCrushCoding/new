@@ -55,7 +55,7 @@ body a:hover {
 	position: relative;
     left: 0;
     bottom: 0;
-    height: 150px;
+    /*height: 150px;*/
 	background-color: rgba(10,26,91,1.00);
     padding: 3px;
 }
