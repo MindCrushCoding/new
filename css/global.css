@@ -4,6 +4,12 @@ body {
 	/*height: 1000px;*/
 }
 
+#player{
+	position: absolute;
+	margin-top: 200px;
+	z-index: 10001;
+}
+
 body a {
 	color: #fff;
 }

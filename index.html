@@ -7,13 +7,18 @@
    	<script type="text/javascript" src="jquery.min.js"></script>
     <script src="owl.carousel.js"></script>
     <script src="moment.min.js"></script>
+	<script src="./js/audio.min.js"></script>	
 
     <script>
-    $(document).ready(function() {
-      $("#owl-demo").owlCarousel({
-        navigation : true
-      });
-    });
+		$(document).ready(function() {
+		  $("#owl-demo").owlCarousel({
+			navigation : true
+		  });
+		});
+		audiojs.events.ready(function() {
+			var as = audiojs.createAll();
+		});
+	</script>
 
     </script>
     
@@ -96,14 +101,15 @@
 </script>
 </head>
 <body>
+<div id =  "player">
+	<audio src="./oops.mp3" preload="auto" autoplay></audio>
+</div>
 	<div id = "header">
-		<div class="slider">
-		
+		<div class="slider">		
 			<div id = "descr" >
 				<h1> RANDOM </h1>
 				<p> Something else </p>
-			</div>
-			
+			</div>			
 			<ul>
 				<li><img src="./slides/1.jpg" alt=""></li>
 				<li><img src="./slides/2.jpg" alt=""></li>
