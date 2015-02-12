@@ -460,11 +460,10 @@ body a:hover {
 
 #owl-demo .item{
 	background: rgba(0,33,115,0.95);
-	padding: 10px 0px;
-	margin: 5px;
+	padding: 3px 0;
+ 	margin: 10px;
+	height: 150px;
 	color: #FFF;
-	height:150px;
-	width: 250px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
