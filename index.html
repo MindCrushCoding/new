@@ -4,7 +4,7 @@
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   	<script type="text/javascript" src="jquery.min.js"></script>
+   	<script type="text/javascript" src="./jquery.min.js"></script>
     <script src="owl.carousel.js"></script>
     <script src="moment.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
@@ -23,6 +23,7 @@
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function () {
+			$(".subprep").width(document.body.clientWidth * 0.8)
 			$(".slider").width($(window).width());
 			$(".slider ul li").width($(window).width());			
 			$("#nav").show();
@@ -312,11 +313,39 @@
 					<h1> Преподаватели </h1>
 					<p> Возглавляет кафедру «Безопасные информационные технологии» доктор технических наук, профессор Зикратов Игорь Алексеевич.</p>
 				</div>
-			
+			<div>
+					<ul id = "prepmenu">
+						<li class = "top sub_active"><a>Штаб</a>
+							<div class="subprep" style="display:block;">
+								WWWWW
+							</div>
+						</li>
+						<li class = "top"><a>Награды</a>
+							<div class="subprep">
+								QQQQQQ
+							</div>
+						</li>
+						<li class = "top"><a>Публикации</a>
+							<div class="subprep">
+								EEEEEEE
+							</div>
+						</li>
+					</ul>							
+				</div>			
 			</div>
 		</div>		
 	</div>
-    
+    <script type="text/javascript">
+		$("#prepmenu .top").click(function() {
+			if ($(this).children(".subprep").css("display") == "none")
+			{
+				$(this).parent().children(".top").removeClass("sub_active");
+				$(this).parent().children(".top").children(".subprep").hide();		
+				$(this).children(".subprep").show().width(document.body.clientWidth * 0.8); //Don't forget to rewrite left: in css;
+				$(this).addClass("sub_active");		
+			}			
+		});
+	</script>
     <div id ="footer" >  
 		<div class="content" style="height=80%">
 			<div class="left" style="width:60%; float:left; margin-left:10px; margin-top:0px">
