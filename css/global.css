@@ -390,7 +390,7 @@ text-decoration:none;
 	font-size: 22px;
 	line-height: 1.72em;
 	padding-bottom: 20px;
-	padding-right: 300px;
+
 	color:white;
 	font-family: Helvetica;
 }
@@ -410,7 +410,6 @@ text-decoration:none;
 	height: 100%;
 	width: 100%;
 }
-
 #block3{
 	position: relative;
 	width: 100%;
@@ -425,6 +424,10 @@ text-decoration:none;
 	background-color: rgba(237,177,205,0.5);
 	height: 100%;
 	width: 100%;
+}
+
+#block3 #shadow p{
+	padding-right: 300px;
 }
 
 #block4{
@@ -442,7 +445,6 @@ text-decoration:none;
 	height: 100%;
 	width: 100%;
 }
-
 #news {
 	position: fixed;
 	top: 328px;
