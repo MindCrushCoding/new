@@ -596,7 +596,6 @@ nav a:focus {
   text-shadow: 1px 1px 1px rgba(0,33,115,1.00); 
 }
 
-<<<<<<< HEAD
 #prepmenu {
 	height: 40px;
 	font-family: Helvetica;
@@ -643,7 +642,6 @@ nav a:focus {
 
 .sub_active a{
 	color: red;
-=======
 
 *,
 *:before,
@@ -688,5 +686,4 @@ nav a:focus {
     margin: 0 0 20px 0;
     width: 100%;
   }
->>>>>>> origin/master
 }
