@@ -62,7 +62,9 @@ body a:hover {
 	font-family:Times New Roman;
     padding: 3px;
 }
-
+#footer .right a{
+text-decoration:none;
+}
 #header {
 	position: relative;
 	height: 100%; /*744px was */
@@ -492,8 +494,11 @@ body a:hover {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	text-align: center;
+	font-family:Helvetica;
+	font-size:18px;
 }
-
+.item a{ text-decoration:none;
+}
 /*CLOCK STARTS*/	
 .date #daymonth {
   color:white;
