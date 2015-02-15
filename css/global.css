@@ -843,15 +843,14 @@ nav a:focus {
 }
 
 .rslats {
-  margin: 3em -2em;
-  
+/*  margin: 3em -2em;*/
   line-height: 1.4;
   text-align: center;
 }
 .rslats li {
   text-align: justify;
   list-style-type: none;
-  width: 33.33%;
+  width: 30%;
   display: inline-block;
   vertical-align: top;
   padding: 0 2em;
