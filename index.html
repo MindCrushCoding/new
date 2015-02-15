@@ -3,7 +3,8 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css"media="all" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   	<script type="text/javascript" src="./jquery.min.js"></script>
+   	<script type="text/javascript" src="./jquery.min.js"></script>	
+	<script type="text/javascript" src="./tmp/jquery.fractionslider.min.js"></script>	
 	
     <script src="moment.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
@@ -37,32 +38,29 @@
 			$(".slider ul li").width($(window).width());	
 		})
 	</script>	
+	<script type="text/javascript" src="./js/jquery.flexslider-min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/slider.css" media="all" />
+	
 	<script type="text/javascript">
-	$(document).ready(function() {
-		$(".slider").each(function () {
-		var obj = $(this);
-		$(obj).append("<div class='nav'></div>");
-		$(obj).find("li").each(function () {
-			$(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); 
-			$(this).addClass("slider"+$(this).index());
+	var $ = jQuery.noConflict();
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+          animation: "fade"
+    });
+	
+	$(function() {
+		$('.show_menu').click(function(){
+				$('.menu').fadeIn();
+				$('.show_menu').fadeOut();
+				$('.hide_menu').fadeIn();
 		});
-		$(obj).find("span").first().addClass("on");
+		$('.hide_menu').click(function(){
+				$('.menu').fadeOut();
+				$('.show_menu').fadeIn();
+				$('.hide_menu').fadeOut();
 		});
 	});
-	function sliderJS (obj, sl) {
-		var ul = $(sl).find("ul"); 
-		var bl = $(sl).find("li.slider"+obj); 
-		var step = $(bl).width();
-		$(ul).animate({marginLeft: "-"+step*obj}, 800); 
-	}
-	$(document).on("click", ".slider .nav span", function() {
-		var sl = $(this).closest(".slider"); 
-		$(sl).find("span").removeClass("on"); 
-		$(this).addClass("on"); 
-		var obj = $(this).attr("rel");
-		sliderJS(obj, sl);
-		return false;
-	});
+  });
 	$(function() {
 		$('a[href*=#]:not([href=#])').click(function() {
 			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -81,17 +79,25 @@
 </head>
 <body>
 	<div id = "header">
-		<div class="slider">		
-			<div id = "descr" >
-				<h1> RANDOM </h1>
-				<p> Something else </p>
-			</div>			
-			<ul>
-				<li><img src="./slides/1.jpg" alt=""></li>
-				<li><img src="./slides/2.jpg" alt=""></li>
-				<li><img src="./slides/3.jpg" alt=""></li>
-			</ul>
-		</div>
+
+	<div class="slider_container">
+		<div class="flexslider">
+	      <ul class="slides">
+	    	<li>
+	    		<img src="./slides/1.jpg" alt="" title=""/>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2>Party Hairstyles</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<img src="./slides/2.jpg" alt="" title=""/>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2>Beautiful Hairstyle</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
+                </div>
+	    	</li>
+	    </ul>
+	  </div>
+	  </div>
 		<div id = "menutop">
 			<ul id = "ulhead">
 				
