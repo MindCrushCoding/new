@@ -408,7 +408,7 @@ text-decoration:none;
 }
 
 #block2 #shadow{
-	background-color: rgba(196,252,204,0.50);
+	background-color: rgba(196,252,204,0.30);
 	height: 100%;
 	width: 100%;
 }
@@ -882,9 +882,9 @@ nav a:focus {
 .rslats p{
 	text-align:center;
 	font-size: 1.4vw;
-	color:black;
+	color:white;
 	font-family:Helvetica;
-	text-shadow:1px 1px 1px rgba(196,252,204,1.0);
+	text-shadow:1px 1px 1px black;
 }
 
 @media (max-width: 767px) {
