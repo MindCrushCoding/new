@@ -4,6 +4,7 @@ body {
 	background-color:#FFF8E7;
 	/*height: 1000px;*/
 	font-family: Helvetica;
+	width: 100%;
 }
 
 body a {
@@ -171,8 +172,7 @@ text-decoration:none;
 	background: #002173 ; 
 }
 
-#ulhead ul.inside{
-	
+#ulhead ul.inside{	
 	width: 100%;
 	position: absolute;
 	left: -9999px;
@@ -364,6 +364,7 @@ text-decoration:none;
 	height: 150px;
 	font-family: Helvetica;
 	text-shadow: 1px 1px 1px white;
+	width: 100%;
 }
 
 #text {
