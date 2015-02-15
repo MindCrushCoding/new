@@ -31,7 +31,7 @@ body a:hover {
     background-color: rgba(255, 87, 0, 0.84);
 }
 
-::-webkit-scrollbar-track:hover{
+::-webkit-scrollbar-track:hover{	
     border-left: solid 1px #aaa;
     background-color: #eee;
 }
@@ -341,22 +341,24 @@ text-decoration:none;
 	font-family: Helvetica;
 	text-shadow: 1px 1px 1px white;
 	background-color:#FFF8E7;
+	position:relative;
 }
 
 #block1{
-	position: relative;
+	position:static;
 	width: 100%;
 	height: 700px;
 	background-image: url("../images/1.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-/*	background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 #block1 #shadow{
 	background-color: rgba(255, 87, 0, 0.54);
 	height: 100%;
 	width: 100%;
+	
 }
 
 #hr{
@@ -396,13 +398,13 @@ text-decoration:none;
 }
 
 #block2{
-	position: relative;
+	position:static;
 	width: 100%;
 	height: 700px;
 	background-image: url("../images/2.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 #block2 #shadow{
@@ -411,13 +413,13 @@ text-decoration:none;
 	width: 100%;
 }
 #block3{
-	position: relative;
+	position:static;
 	width: 100%;
 	height: 700px;
 	background-image: url("../images/4.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 #block3 #shadow{
@@ -431,13 +433,13 @@ text-decoration:none;
 }
 
 #block4{
-	position: relative;
+	position:static;
 	width: 100%;
 	height: 700px;
 	background-image: url("../images/5.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 #block4 #shadow{

@@ -230,7 +230,7 @@
 	
 	<div id = "globalcontent">
 		<div id = "intro">
-	 <div id="main-slider" class="liquid-slider">
+			 <div id="main-slider" class="liquid-slider">
     <div>
       <h2 class="title">Инфотекс и VipNet</h2>
       <p>Компания ИнфоТеКС, ведущий производитель программных и программно-аппаратных VPN-решений и средств криптографической защиты информации. ИнфоТеКС - одна из немногих российских компаний, которая инвестирует бизнес-ресурсы в привлечение и обучение талантливых сотрудников, а также стремится поддержать развитие их научной и исследовательской деятельности. В рамках программы сотрудничества компании ИнфоТеКС и кафедры БИТ Университета ИТМО в 2014-2015 году на кафедре была создана специализированная лаборатория СКЗИ ViPNet. .</p>
@@ -247,7 +247,7 @@
       <h2 class="title">Найти Dream-Team</h2>
       <p>Blah-blah-blah</p>
     </div>
-  </div>
+  </div>		
 		</div>
         
 		<div id = "block1">
@@ -382,16 +382,19 @@
 				<br>Присоединяйтесь к нам в соц. сетях  </p>
 		</div>
 	</div>
-  
+
    
 	</div>
-		
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
   <script src="js/jquery.liquid-slider.min.js"></script>  
   <script>
   
-    $('#main-slider').liquidSlider();
+    $('#main-slider').liquidSlider({
+  autoHeight:false,
+});
+
   </script>
 </body>
 </html>
