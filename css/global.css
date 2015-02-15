@@ -408,7 +408,7 @@ text-decoration:none;
 }
 
 #block2 #shadow{
-	background-color: rgba(142,209,144,0.4);
+	background-color: rgba(196,252,204,0.50);
 	height: 100%;
 	width: 100%;
 }
@@ -841,3 +841,80 @@ nav a:focus {
   right: 0;
   z-index: 2;
 }
+
+.rslats {
+  margin: 3em -2em;
+  
+  line-height: 1.4;
+  text-align: center;
+}
+.rslats li {
+  text-align: justify;
+  list-style-type: none;
+  width: 33.33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 2em;
+  border-left: 1px solid #d35400;
+  border-right: 1px solid #d35400;
+  margin-left: -1px;
+}
+.rslats li:first-child {
+  border-left-width: 0;
+}
+.rslats li:last-child {
+  border-right-width: 0;
+}
+.rslats li > img {
+  border-radius: 80px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: auto;
+}
+.rslats h2, .rslats h3, .rslats h4, .rslats h5, .rslats h6 {
+  color: rgba(0,33,115,1.00);
+  margin-top: 1rem;
+  text-align: center;
+  font-size:1.5vw;
+  font-family:Helvetica;
+  text-shadow:1px 1px 1px black;
+}
+.rslats p{
+	text-align:center;
+	font-size: 1.4vw;
+	color:black;
+	font-family:Helvetica;
+	text-shadow:1px 1px 1px rgba(196,252,204,1.0);
+}
+
+@media (max-width: 767px) {
+  .rslats {
+    padding: 0 0 0 90px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .rslats h2, .rslats h3, .rslats h4, .rslats h5, .rslats h6 {
+    text-align: left;
+  }
+  .rslats li {
+    text-align: left;
+    position: relative;
+    clear: left;
+    margin: 2em auto;
+    padding: 0;
+    min-height: 80px;
+    display: block;
+    width: 100%;
+    border-width: 0;
+  }
+  .rslats li > img {
+    border-radius: 80px;
+    position: absolute;
+    left: -90px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+}
+
