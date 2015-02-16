@@ -196,7 +196,6 @@ text-decoration:none;
 	bottom: 0;
 	height: 40px;
 	font-family: Helvetica;
-
 	width: 60%;
 	display: table;
 	table-layout: fixed;
@@ -271,7 +270,6 @@ text-decoration:none;
 .slider .nav span {
 	opacity: 0.9;
 	background: #fff;
-
 	margin: 0 8px 0 0;
 	width: 16px;
 	height: 16px;
@@ -365,6 +363,7 @@ text-decoration:none;
 	font-family: Helvetica;
 	text-shadow: 1px 1px 1px white;
 	width: 100%;
+	overflow:hidden;
 }
 
 #text {
@@ -622,10 +621,15 @@ nav a:focus {
 	display: none;
 	margin-top: 20px;
 	position: absolute;
-	text-align: center;
+	text-align: left;
 	width: 100%;
 	left: 10%;
+	color:white;
+	font-size:18px;
+	text-shadow: 1px 1px 1px black;
 }
+/*.subprep a, a:hover, a:active, a:focus{ text-decoration:none; color:white;
+}*/
 
 .sub_active a{
 	color: red;
@@ -636,7 +640,8 @@ nav a:focus {
 
 .liquid-slider {
   height:100%;
-  /*overflow:scroll;*/
+
+  background:url(../images/bck.jpg);  /*overflow:scroll;*/
   font-family:Helvetica;
 }
 .ls-preloader {  
@@ -657,8 +662,9 @@ nav a:focus {
   position: relative;
 }
 .liquid-slider {
-  background: #fff8e7;
+  background-color: #f9ebbc ;
   width: 100%;
+  height:161px;
   margin: 0 auto;
   float: left;
   overflow: hidden;
@@ -672,7 +678,7 @@ nav a:focus {
   width: 100%;
   margin: 0;
 }
-.panel-container {
+.panel-container {background:none;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -696,13 +702,15 @@ nav a:focus {
 .panel-wrapper {  
   padding: 15px 40px;
   position:relative;
-  background-color:#fff8e7;
+  background:none;
 }
 
 /*** Tabbed Navigation ***/
 .ls-nav {
   overflow:hidden;
   clear:both;
+  background:none;
+  
 }
 .ls-nav a {
   background: #d8d8d8;
@@ -712,12 +720,12 @@ nav a:focus {
   outline:0;
 }
 .ls-nav a:hover {
-  background: #fff8e7;
+  background: #f9ebbc;
   color: #333333;
   text-shadow: none;
 }
 .ls-nav .current a {
-  background: #fff8e7;
+   background:none;
 }
 .currentCrossLink {
   font-weight: bold;
@@ -843,6 +851,7 @@ nav a:focus {
 
 .rslats {
 /*  margin: 3em -2em;*/
+
   line-height: 1.4;
   text-align: center;
 }
@@ -918,8 +927,8 @@ nav a:focus {
 
 
 blockquote {
-  margin-left:10px;
- 
+  margin-left:50px; 
+  float: left;
   position: absolute;
   width: 32%;
   font-size: 14px;
@@ -935,7 +944,7 @@ blockquote span {
   text-align: right;
   font-size: 14px;
   line-height: 20px;
- /* margin-top: 10px;*/
+  margin-top: 10px;
   text-transform: uppercase;
   color:rgba(0,33,115,1.00);
 }
@@ -946,7 +955,7 @@ blockquote span {
 #quote blockquote, q {quotes: none;}
 #quote blockquote:before, blockquote:after,
 #quote q:before, q:after {content: '';content: none;}
-#quote{width:65%;padding:0px 6px 0 6px;}
+#quote{width:100%;padding:0px 6px 0 6px; float:left;}
 #quote h3{background:url(img/h3.png) no-repeat center;color:#dd3c04;font-size:13px;font-weight:normal;text-align:center;text-transform:uppercase;margin-bottom:17px;}
 #quote .photo{background:url(img/photo-bg.png) no-repeat center;margin-right:6px;position:relative;float:left;}
 #quote .photo img{max-width:115px;max-height:115px;overflow:hidden;position:absolute;}
@@ -957,7 +966,7 @@ blockquote span {
 #quote p.content span.laquo{background:url(img/laquo.png) no-repeat;width:14px;height:11px;position:absolute;left:0;top:4px;display:block;}
 #quote p.content span.raquo{background:url(img/raquo.png) no-repeat right 4px;width:13px;height:15px;padding-left:4px;display:inline-block;}
 #quote .sign{text-align:right;float:right; margin-top:-25px;}
-#quote .sign a{color:#577302;font-family:Arial,sans-serif;font-size:13px;text-decoration:none;}
+#quote .sign a{color:#577302;font-family:Arial,sans-serif;font-size:12px;text-decoration:none;}
 #quote .sign a:hover{text-decoration:underline;}
 #quote .sign p{color:#5a5a5a;font-size:12px;line-height:15px;margin-top:6px;}
 .column2 {
@@ -972,26 +981,28 @@ blockquote span {
   width: 40% !important;
 }
 .column2#red {
-  background: rgba(242,86,72,0.6);
+  background: rgba(252,204,212,0.7);
 }
 .column2#orange {
-  background: rgba(252,123,22,0.6);
+  background: rgba(252,228,172,0.7);
 }
+
 .column2#yellow {
-  background: rgba(254,229,50,0.6);
+  background: rgba(252,252,164,0.7);
 }
 .column2#green {
-  background: rgba(35,175,76,0.6);
+  background: rgba(196,252,204,0.7);
+  
 }
 .column2#blue {
-  background: rgba(66,180,230,0.6);
+  background: rgba(204,204,252,0.7);
 }
 .column2:hover p {
   opacity: 1;
 }
 
 .column2 p {
-  color: #fff;
+  color: rgba(0,33,115,1.00);
   text-align: center;
   text-shadow: none;
   font-family: Arial, sans-serif;
@@ -999,3 +1010,5 @@ blockquote span {
   opacity: 0;
   transition: all 0.5s ease;
 }
+/*.box{white-space:nowrap}*/
+.box {display:inline-block; float:left;}
