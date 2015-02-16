@@ -48,7 +48,7 @@ body a:hover {
 #heading{
 	height: 200px;
 	position: relative;
- 	background: linear-gradient(to bottom, #002173 40px,rgba(0,33,115,0.7) 120px,rgba(0,33,115,0.0) 100%); 
+ 	background: linear-gradient(to bottom, #002173 44px,rgba(0,33,115,0.7) 120px,rgba(0,33,115,0.0) 100%); 
  }
  
  #globalcontent {
