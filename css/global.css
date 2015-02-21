@@ -65,9 +65,7 @@ body a:hover {
 	/*font-family:Times New Roman;*/
     padding: 3px;
 }
-#footer .right a{
-text-decoration:none;
-}
+
 #header {
 	position: relative;
 	height: 100%; /*744px was */
@@ -1033,3 +1031,5 @@ blockquote span {
 }
 /*.box{white-space:nowrap}*/
 .box {display:inline-block; float:left;}
+.cont {display:inline-block; float:left;}
+.cont .right a {text-decoration:none;}
