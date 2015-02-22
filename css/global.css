@@ -48,7 +48,7 @@ body a:hover {
 #heading{
 	height: 200px;
 	position: relative;
- 	background: linear-gradient(to bottom, #002173 44px,rgba(0,33,115,0.7) 120px,rgba(0,33,115,0.0) 100%); 
+ 	background: linear-gradient(to bottom, #002173 40px,rgba(0,33,115,0.7) 120px,rgba(0,33,115,0.0) 100%); 
  }
  
  #globalcontent {
@@ -100,7 +100,7 @@ body a:hover {
 	position: fixed;
 /*	font-weight:normal;*/
 	/*margin-top: -120px;*/
-	top: 44px;
+	top: 40px;
 	height: 40px;
 	width: 100%;
 	z-index: 999;
@@ -115,8 +115,8 @@ body a:hover {
 	right: 10%;
 }
 #ulhead {
-	font-size: 13px;
-	height: 44px;
+	font-size: 15px;
+	height: 40px;
 	position: fixed;
 	/*font-family: Helvetica;*/
 	text-shadow: 1px 1px 1px rgba(0,33,155,1.00);
@@ -218,7 +218,7 @@ body a:hover {
 	vertical-align:middle;
 	transition: 0.4s;
 	position: relative;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 #ullow li a{
@@ -453,12 +453,12 @@ body a:hover {
 /*CLOCK STARTS*/	
 .date #daymonth {
   color:white;
-  font-size: 0.7vw;
+  font-size: 10px;
 }
 
 .date #year {
   color:#C1C1C1;
-  font-size: 0.7vw;
+  font-size: 10px;
   /*margin-top: 20px;*/
 }
 
@@ -495,7 +495,7 @@ body a:hover {
 
 .par{
 	margin-top: 0;
-	font-size: 0.7vw;
+	font-size: 10px;
 }
 
 .color-7 {
@@ -581,12 +581,7 @@ nav a:focus {
 .column ::selection {
   background: rgba(0,33,115,0.3);
 }
-@media screen and (max-width: 768px) {
-  .column {
-    margin: 0 0 20px 0;
-    width: 100%;
-  }
-}
+
 #prepmenu {
 	height: 40px;
 	/*font-family: Helvetica;*/
@@ -632,6 +627,9 @@ nav a:focus {
 	color:white;
 	font-size:18px;
 	text-shadow: 1px 1px 1px black;
+}
+.subprep table{
+	color:white;
 }
 /*.subprep a, a:hover, a:active, a:focus{ text-decoration:none; color:white;
 }*/
@@ -904,7 +902,11 @@ nav a:focus {
 	text-shadow:1px 1px 1px black;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .column {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
   .rslats {
     padding: 0 0 0 90px;
     margin-left: 0;
@@ -1043,3 +1045,20 @@ blockquote span {
     text-align: right; 
 	 width: 50%; 
    }
+.photo{ /* селектор для класса avatar */
+    float: left; 
+    background: #fff; 
+    width: 100px; 
+    height: 100px; 
+    padding: 5px; 
+    border: 1px solid #999; 
+    border-radius: 50%; 
+    box-shadow: 0px 1px 1px 1px #bbb /* смещение по горизонтали, смещение по вертикали, размытие, увеличение и цвет */
+}
+.photo img{ 
+    display: block; 
+    width: 100%; 
+    border: 0; 
+    margin: 0; 
+    border-radius: 50%; 
+}
