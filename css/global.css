@@ -61,7 +61,8 @@ body a:hover {
     left: 0;
     bottom: 0;
     height: 100px;
-	background:url(../../../ft.png);
+	background:url(../back/ft.png);
+	display:inline-block; float:left;
 	/*background-color: rgba(3,31,100,1.00);/*rgba(10,26,91,1.00);
 	/*font-family:Times New Roman;*/
     padding: 3px;
@@ -1032,12 +1033,13 @@ blockquote span {
 }
 /*.box{white-space:nowrap}*/
 .box {display:inline-block; float:left;}
-/*.cont {display:inline-block; float:left;}
-.cont .right a {text-decoration:none;}*/
- .lefts, .rights {
+
+ .lefts {
     float: left;  
     width: 50%; 
    }
 .rights {
+	float: left;
     text-align: right; 
+	 width: 50%; 
    }
