@@ -1045,7 +1045,7 @@ blockquote span {
     text-align: right; 
 	 width: 50%; 
    }
-.photo{ /* селектор для класса avatar */
+.photos{ 
     float: left; 
     background: #fff; 
     width: 100px; 
@@ -1053,9 +1053,9 @@ blockquote span {
     padding: 5px; 
     border: 1px solid #999; 
     border-radius: 50%; 
-    box-shadow: 0px 1px 1px 1px #bbb /* смещение по горизонтали, смещение по вертикали, размытие, увеличение и цвет */
+    box-shadow: 0px 1px 1px 1px #bbb 
 }
-.photo img{ 
+.photos img{ 
     display: block; 
     width: 100%; 
     border: 0; 
