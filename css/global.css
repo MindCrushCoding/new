@@ -1,10 +1,15 @@
+#grph {
+	width: 70%;
+	height: 500px;
+	margin: 0 0 0 15%;
+}
 
 body {
 	padding: 0;
 	margin: 0;
 	background-color:#FFF8E7;
 	/*height: 1000px;*/
-	font-family: 'Open Sans', sans-serif;;
+	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 }
 
