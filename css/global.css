@@ -65,8 +65,8 @@ body a:hover {
 	position: relative;
     left: 0;
     bottom: 0;
-    height: 100px;
-	background:url(../back/ft.png);
+    height: 130px;
+	background-image:url(../back/ft.png);
 	display:inline-block; float:left;
 	/*background-color: rgba(3,31,100,1.00);/*rgba(10,26,91,1.00);
 	/*font-family:Times New Roman;*/
