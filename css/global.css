@@ -90,8 +90,10 @@ body a:hover {
 #navlow{
 	position: absolute;
 	height: 40px;
-	width: 100%;
+	width: 25%;
 	z-index: 0;
+	top:90px;
+	left:235px;
 }
 
 #navlow p {
@@ -300,8 +302,8 @@ body a:hover {
  .heading-sit{
  	/*border-width: 0 2px 0 0;border-color:rgba(255,255,255,0.50); border-style: solid; padding-right: 10px; height:30%;*/
 	float: left;
-	top: 50px;
-	width:25%;
+	top: 40px;
+	width:15%;
 	position: absolute;
  }
  .heading-sit img{
@@ -324,12 +326,16 @@ body a:hover {
  #heading h1{
 	 color:#fff;
 	 font-weight: 700;
-	 text-align:center;
+	 text-align:left;
 	 font-variant: small-caps;
 	 /*font-family: Helvetica;*/
 	 font-size: 2.0vw;
+	 padding-left:250px;
 	 margin-bottom:17px;
 	 padding-top:50px;
+	 width: 900px;
+	 display:inline-block;
+	 float:left;
  }
  
  #descr p{
@@ -506,7 +512,7 @@ body a:hover {
 }
 
 .color-7 {
-	margin-left: 27%;
+	/*margin-left: 27%;*/
 	width: 60vw;
 	}
 nav a {
