@@ -1,7 +1,23 @@
 #grph {
 	width: 70%;
 	height: 500px;
-	margin: 0 0 0 15%;
+	margin-left: 3%;
+	display: block;
+	float: left;
+}
+
+#grph_text {
+	width: 20%;
+	float: right;
+	display: block;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+#grph_text p{
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(0,33,115,1.00);
 }
 
 body {
