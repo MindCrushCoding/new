@@ -100,7 +100,7 @@ body a:hover {
 	position: fixed;
 /*	font-weight:normal;*/
 	/*margin-top: -120px;*/
-	top: 40px;
+	top: 42px;
 	height: 40px;
 	width: 100%;
 	z-index: 999;
@@ -116,7 +116,7 @@ body a:hover {
 }
 #ulhead {
 	font-size: 15px;
-	height: 40px;
+	height: 42px;
 	position: fixed;
 	/*font-family: Helvetica;*/
 	text-shadow: 1px 1px 1px rgba(0,33,155,1.00);
@@ -188,8 +188,8 @@ body a:hover {
 
 #ulhead li.top:hover ul.inside {
 	left: 0;
+	top: 42px;
 	display: block;
-	margin: 6px 0 0 0;
 }
 
 /* END DROPDOWN*/
